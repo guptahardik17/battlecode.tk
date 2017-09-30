@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="h-100">
+
+<head>
+  <title>BattleCODE</title>
+  <meta charset="utf-8">
+
+
+  
+  <link rel="stylesheet" href="assets/js/style.min.css"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body class="index w-100 h-100 helvetica sans-serif">
+
+  <a href="index.html" class="dn fixed left-1 top-1 top-04-ns z-max ma2-ns mt1-ns w25 w3-ns" id="logo">
+    <svg class="w-100 h-100" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="logo-svg-p" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="logo-svg-inner" transform="translate(-1355.000000, -132.000000)" fill-rule="nonzero" fill="#FF3F2C">
+                <path transform="translate(0, 9)" d="M1371.17909,152.017291 C1370.69931,152.843571 1369.81973,153.35 1368.86018,153.35 C1367.90062,153.35 1367.02104,152.843571 1366.54126,152.017291 L1361.15712,142.688327 C1360.67734,141.862048 1360.67734,140.849189 1361.15712,140.022909 C1361.63689,139.196629 1362.51648,138.6902 1363.47603,138.6902 L1365.79494,138.6902 C1366.54126,138.6902 1367.12765,138.103808 1367.12765,137.357491 C1367.12765,136.611174 1366.54126,136.024782 1365.79494,136.024782 C1366.00818,136.024782 1358.86486,136.024782 1358.86486,136.024782 C1357.90531,136.024782 1357.02572,135.518352 1356.54594,134.692072 L1355,132.026654 L1365.76829,132.026654 C1368.70025,132.026654 1371.09913,134.425531 1371.09913,137.357491 C1371.09913,140.289451 1368.70025,142.688327 1365.76829,142.688327 L1368.91348,148.019164 L1377.30955,133.359363 C1377.78933,132.533084 1378.66891,132.026654 1379.62846,132.026654 L1382.6937,132.026654 L1371.17909,152.017291 Z M1383.49332,151.990637 C1383.01355,152.816917 1382.13396,153.323346 1381.17441,153.323346 C1380.21486,153.323346 1379.33527,152.816917 1378.85549,151.990637 L1376.53658,147.99251 C1376.0568,147.16623 1376.0568,146.153371 1376.53658,145.327091 L1378.08252,142.661673 L1381.14775,147.99251 L1389.62378,133.332709 C1390.10356,132.506429 1390.98315,132 1391.9427,132 L1395.00793,132 L1383.49332,151.990637 Z" id="Shape"></path>
+            </g>
+        </g>
+    </svg>
+  </a>
+
+  <nav id="nav-container" class="dn fixed right-1 top-1 border-box z-max pa1">
+    <div class="dtc v-mid tr pv2-ns">
+      <a class="f6 fw6 dib white hover-white mr1-ns pa2 pr1 pl1" href="index.html" id="nav-home" >Home</a>
+      <!--<a class="f6 fw6 dib mid-blueish hover-white mr1-ns pa2 pr1 pl1" href="index.html" id="nav-work">Work</a> -->
+      <a class="f6 fw6 dib mid-blueish hover-white pa2 pl1 pr1" href="index.html" id="nav-about">About</a>
+    </div>
+  </nav>
+<!--
+  <div id="uplink-container" class="fixed o-0 dn dib-ns left-1 bottom-1">
+
+      <div class="db flex justify-between mb1">
+        <div class="dib">
+          <div class="pixelsize white-40" id="txt-sat"></div>
+          <div class="pixelsize white" id="txt-uplink"></div>
+        </div>
+        <div class="f55 white dib"><span id="uplink-counter">100</span><span class="red pixelsize v-top relative perc">%</span></div>
+      </div>
+
+      <svg id="uplink-lines" class="db hidden" width="100px" height="16px" viewBox="0 0 100 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-10, -870)">
+                  <g transform="translate(10, 841)">
+                      <g transform="translate(0, 29)">
+                          <rect class="fill-blueish" opacity="0.1" x="0" y="12" width="100" height="4"></rect>
+                          <rect id="uplink1" fill="#ff4136" opacity="0.4" x="0" y="12" width="0" height="4"></rect>
+                          <rect class="fill-blueish" opacity="0.1" x="0" y="6" width="100" height="4"></rect>
+                          <rect id="uplink2" fill="#ff4136" opacity="0.7" x="0" y="6" width="0" height="4"></rect>
+                          <rect class="fill-blueish" opacity="0.1" x="0" y="0" width="100" height="4"></rect>
+                          <rect id="uplink3" fill="#ff4136" x="0" y="0" width="0" height="4"></rect>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+  </div>
+  -->
+
+  <div id="share-container" class="fixed right-1 bottom-1 z-max o-0 dn db-ns z-max">
+    
+      <div id="share-buttons" class="mb2 o-0">
+          <a id="share-tw" href="https://twitter.com/intent/tweet?text=Portfolio%20of%20designer%20%26%20developer%20www.rickwaalders.com" target="_blank" class="w1 h1 dib pa2 link dark-blueish hover-white">
+            <svg data-icon="twitter" viewBox="0 0 32 32" style="fill:currentcolor">
+              <title>twitter icon</title>
+              <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+            </svg>
+          </a>
+          <a id="share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://www.rickwaalders.com" target="_blank" class="w1 h1 dib pa2 link dark-blueish hover-white">
+            <svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+              <title>facebook icon</title>
+              <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
+            </svg>
+          </a>
+      </div>
+    
+      <div class="f65 fw5 tracked ttu mid-blueish ba b--blueish tc ttu pv2 ph3 pointer">Share</div>
+ 
+  </div>
+
+
+  <div id="work-container" class="w-100 h-100 absolute top-0 right-0 z-9999 dn">
+
+
+
+    <div id="work" class="w-90 w-70-l pa3 mt2 mt5-l pt5 center">
+
+        <div class="cf w-100 mb3 flex justify-between flex-row">
+            <div class="work-item w-50 mr2"><img src="assets/img/work/c11.jpg" class="shadow-6 w-100"></div>
+            <div class="work-item w-50 ml2"><img src="assets/img/work/c1.jpg" class="shadow-6 w-100"></div>
+        </div>
+        <div class="work-item"><img src="assets/img/work/dicta-web1.png" class="shadow-6 mb3"></div>
+
+        <div class="center pt3 mb5 pb5 tc" id="work-loader">
+          <img src="assets/img/svg/three-dots.svg" class="w2 mt5-l">
+        </div>
+        <div id="work-ajax-container">
+        </div>
+        
+    </div>
+    <p class="center measure lh-copy f5 f3-l mid-blueish pa4 pa3-l mb5 pb5 tc">
+      Hey, my name is <a href="index.html" class="link red underline hover-white" id="work-about-link">Rick</a>. If you would like to get in touch or see more of my work, follow me on <a href="http://twitter.com/rickwaalders" target="_blank" class="link red underline hover-white">Twitter</a>, <a href="http://instagram.com/rickwaalders" target="_blank" class="link red underline hover-white">Instagram</a>, <a href="http://dribbble.com/rickwaalders" target="_blank" class="link red underline hover-white">Dribbble</a> or send me an <a href="mailto:hello@rickwaalders.com" class="link red underline hover-white">email</a>.
+    </p>
+  </div>
+
+
+  <div id="about-container" class="w-100 h-100 absolute top-0 right-0 z-9999 dn">
+      <div id="about-ajax-container"></div>
+  </div>
+
+
+
+  <!--<div id="cube-container" class="absolute dn">
+    <div class="cube">
+      <div class="cube-side cube-top"></div>
+      <div class="cube-side cube-center"></div>
+      <div class="cube-side cube-bottom"></div>
+    </div>
+  </div>-->
+
+
+  <div id="title-container" class="absolute top-0 left-0 right-0 bottom-0 z-999 flex items-center flex-column justify-center">
+      <h2 id="subtitle" class="o-0 f6 fw6 tracked tc ttu lh-title red ma0 mb2 mb0-ns">India's First Coding Challenge Portal</h2>
+      <h1 id="maintitle" class="o-0 f25 f-huge-ns work-sans-bold tc ttu lh-title white ma0 mb2 mb0-ns">BattleCODE</h1>
+      <a href="index.html#work" id="cta" class="z-max link o-0 br1 mt2 mt0-ns absolute bottom-35 relative-ns bottom-0-ns mw4">
+        <div class="ttu tc f65 fw6 bg-black-10 ba b--white-10 bw1 white pa3 ph45">
+          <div class="inner"><span data-hover="View work"><img src="assets/img/svg/cta_arrow_down.svg" class="center"></span></div>
+        </div>
+      </a>
+  </div>
+
+  <div id="main" class="fixed w-100 h-100">
+
+    <div id="scene-container" class="absolute w-100 h-100 z-0"></div>
+
+    <div id="loader-container" class="absolute w-100 h-100 z-1 flex items-center justify-center flex-column">
+
+      <div class="flex flex-row relative left--15" id="loader">
+        <div class="bg-red w4 flex items-center justify-center flex-column" id="loader-logo">
+          <svg class="pl3 pr3" width="30px" height="17px" viewBox="0 0 30 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-320.000000, -647.000000)" fill="#FFFFFF">
+                      <path d="M341.366654,662.632169 C341.006879,663.251782 340.347291,663.631545 339.627741,663.631545 C338.90819,663.631545 338.248602,663.251782 337.888827,662.632169 L336.149913,659.634042 C335.790138,659.014429 335.790138,658.254903 336.149913,657.63529 L337.309189,655.636539 L339.607753,659.634042 L345.963783,648.640908 C346.323558,648.021295 346.983146,647.641532 347.702697,647.641532 L350.001261,647.641532 L341.366654,662.632169 Z M332.132422,662.652157 C331.772647,663.27177 331.113059,663.651533 330.393508,663.651533 C329.673958,663.651533 329.01437,663.27177 328.654594,662.652157 L324.617116,655.656526 C324.257341,655.036913 324.257341,654.277388 324.617116,653.657775 C324.976891,653.038162 325.636479,652.658399 326.35603,652.658399 L328.094944,652.658399 C328.654594,652.658399 329.09432,652.218674 329.09432,651.659023 C329.09432,651.099373 328.654594,650.659647 328.094944,650.659647 C328.254844,650.659647 322.89819,650.659647 322.89819,650.659647 C322.178639,650.659647 321.519051,650.279885 321.159276,649.660272 L320,647.66152 L328.074956,647.66152 C330.273583,647.66152 332.07246,649.460396 332.07246,651.659023 C332.07246,653.85765 330.273583,655.656526 328.074956,655.656526 L330.433483,659.654029 L336.729551,648.660896 C337.089326,648.041283 337.748914,647.66152 338.468465,647.66152 L340.767029,647.66152 L332.132422,662.652157 Z" id="logo-big"></path>
+                  </g>
+              </g>
+          </svg>
+        </div>
+        <div class="bg-lines flex items-center justify-center pa3 white pixelsize tracked ttu">
+          <div class="w45">Initializing</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="container" class="w-100 h-100 relative center flex items-center justify-center z-1">
+
+      <div id="circles-container" class="relative center w-100 w-60-l pa4-l">
+
+        <svg width="100%" viewBox="0 0 160 160">
+          <g transform="translate(80 80)" id="circle-inner" class="dn o-30"></g>
+          <g transform="translate(80 80)" id="circle-inner-most" class="dn"></g>
+          <g transform="translate(80 80)" id="circle-details" class="dn"></g>
+        </svg>
+
+      </div>
+
+    </div>
+
+
+  </div> <!-- #main -->  
+
+<div id="content-loader-container" class="dn index w-100 h-100 work-sans sans-serif items-center justify-center flex-column">
+
+  <svg id="content-loader" class="w4" viewBox="0 0 151 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+      <defs>
+        <clipPath id="clip-background">
+          <rect id="clip-background-rect" x="0" y="0" width="151" height="80" />
+        </clipPath>
+        <clipPath id="clip">
+          <rect id="content-loader-clip-rect" x="0" y="0" width="0" height="80" />
+        </clipPath>
+      </defs>
+      <g transform="matrix(1,0,0,1,0.0002,0.0001)">
+          <g id="LoadingLogoBackground" clip-path="url('#clip-background')">
+              <path fill="#292B36" d="M106.81,75C105.024,78.094 101.722,80 98.15,80C94.577,80 91.276,78.094 89.489,75L80.829,60C79.043,56.906 79.043,53.094 80.829,50L86.603,40L98.15,60L129.904,5C131.69,1.906 134.992,0 138.564,0L150.111,0L106.81,75ZM60.622,75C58.836,78.094 55.534,80 51.962,80C48.389,80 45.088,78.094 43.301,75L23.095,40.002C21.31,36.909 21.309,33.099 23.093,30.006C24.877,26.912 28.175,25 31.746,25L40.415,25C43.176,25 45.415,22.761 45.415,20C45.415,17.239 43.176,15 40.415,15L14.442,15C10.872,15 7.558,13.09 5.773,9.998L0,0L40.415,0C51.46,0 60.415,8.954 60.415,20C60.415,31.046 51.46,40 40.415,40L52.194,60L83.721,5.025C85.503,1.917 88.813,0 92.396,0L103.923,0L60.622,75Z" style="fill-rule:nonzero;"/>
+          </g>
+      </g>
+      <g transform="matrix(1,0,0,1,0.0002,0.0001)">
+          <g id="LoadingLogo" clip-path="url('#clip')">
+              <path fill="#FF3F2C" d="M106.81,75C105.024,78.094 101.722,80 98.15,80C94.577,80 91.276,78.094 89.489,75L80.829,60C79.043,56.906 79.043,53.094 80.829,50L86.603,40L98.15,60L129.904,5C131.69,1.906 134.992,0 138.564,0L150.111,0L106.81,75ZM60.622,75C58.836,78.094 55.534,80 51.962,80C48.389,80 45.088,78.094 43.301,75L23.095,40.002C21.31,36.909 21.309,33.099 23.093,30.006C24.877,26.912 28.175,25 31.746,25L40.415,25C43.176,25 45.415,22.761 45.415,20C45.415,17.239 43.176,15 40.415,15L14.442,15C10.872,15 7.558,13.09 5.773,9.998L0,0L40.415,0C51.46,0 60.415,8.954 60.415,20C60.415,31.046 51.46,40 40.415,40L52.194,60L83.721,5.025C85.503,1.917 88.813,0 92.396,0L103.923,0L60.622,75Z" style="fill-rule:nonzero;"/>
+          </g>
+      </g>
+  </svg>
+
+</div>
+
+
+
+<script src="assets/js/bundle.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97715511-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
